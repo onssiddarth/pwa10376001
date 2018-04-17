@@ -1,0 +1,118 @@
+<!-- Created By
+Id: 10376001
+Name: Siddarth Nair 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Movies-At Dundrum - Movies - Home
+	</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="app.js"></script>
+	<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+	<div class="container bg-light container-margin">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 class="displaytitle">MOVIES @ DUNDRUM</h1>
+			</div>
+		</div>
+	</div>
+	<div class="container bg-light text-center round-top-container">
+		<div class="loader">
+			<!-- <svg viewBox="0 0 32 32" width="32" height="32">
+					  <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+					</svg> -->
+			<!-- <img src="images/ajax-loader.gif"> -->
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 round-container margin-top10">
+				<div class="navibar" id="mynavibar">
+					<a href="index.html" class="navactive">Home</a>
+					<a href="#kidsclub">Kids Club</a>
+					<a href="#eventcinema">Event Cinema</a>
+					<a href="#comingsoon">Coming Soon</a>
+					<a href="#competitions">Competitions</a>
+					<a href="#themezz">The Mezz</a>
+					<a href="contactus.html">Contact Us</a>
+					<a href="#about">About</a>
+					<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="MakeNavResponsive()">&#9776;</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<table>
+					<tr>
+						<td>
+							<span class="round-corners">Select a day:</span>
+						</td>
+						<td>
+							<form>
+								<div class="form-group padding-top10">
+									<select class="form-control" id="chooseDay" style="font-size:large;">
+										<option value="mon" selected>Monday</option>
+										<option value="tue">Tuesday</option>
+										<option value="wed">Wednesday</option>
+										<option value="thu">Thursday</option>
+										<option value="fri">Friday</option>
+										<option value="sat">Saturday</option>
+										<option value="sun">Sunday</option>
+									</select>
+								</div>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-3"></div>
+
+		</div>
+	</div>
+
+	<div id="moviesList" class="container bg-light round-bottom-container">
+	</div>
+
+	<div class="container bg-light round-container">
+		<div class="row">
+			<div class="col-md-3">
+				<h6>GOT A QUESTION</h6>
+				<p class="movie-tag-text">
+					<img src="images/faq.gif" class="imgwidth25"></img>&nbsp;Our knowledge base contains answers to frequently asked questions.</p>
+			</div>
+			<div class="col-md-3">
+				<h6>STAY CONNECTED TO THE MOVIES</h6>
+				<p class="movie-tag-text">
+					<img src="images/youtube.png" class="imgwidth25"></img>&nbsp;Watch us on YouTube</p>
+			</div>
+			<div class="col-md-3">
+				<h6>CINEMA INFORMATION</h6>
+				<p class="movie-tag-text">FAQ</p>
+			</div>
+			<div class="col-md-3">
+				<h6>CONTACT</h6>
+				<p class="movie-tag-text"> Movies@Dundrum Dundrum Town Centre Dundrum, Dublin 14, Ireland Film Information and Bookings: 1520 880 333</p>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<br/>
+</body>
+
+</html>
