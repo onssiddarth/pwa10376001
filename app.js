@@ -22,9 +22,7 @@ $(function () {
         caches.match(movieAppURL).then(function (response) {
             console.log('caches in window movieAppURL');
             if (response) {
-                console.log(response);
                 response.json().then(function updateFromCache(json) {
-                    console.log(json);
                     var results = json;
                     UpdateMovieList(results, "mon");
                 });
@@ -107,7 +105,6 @@ function LoadMoviesList(day) {
             UpdateMovieList(result, selectedDay);
         },
         error: function (jqXHR) {
-            console.log('API error.');
             $('.loader').hide();
         }
     });
@@ -127,9 +124,7 @@ function UpdateMovieList(result, selectedDay) {
         for (var i = 0; i < resultLength; i++) {
             dynamicmovietimesresult = '';
             runningtimes = result[i].runningTimes[selectedDay];
-            console.log(runningtimes);
             var runningtimeslength = runningtimes.length;
-            console.log(runningtimeslength);
             for (var j = 0; j < runningtimeslength; j++) {
                 dynamicmovietimesresult += dynamicMovieTimes.replace("#movietime#", runningtimes[j]);
             }
@@ -138,7 +133,6 @@ function UpdateMovieList(result, selectedDay) {
                 .replace("#moviecast#", result[i].cast)
                 .replace("#moviegenre#", result[i].genre)
                 .replace("#movietimeslist#", dynamicmovietimesresult);
-            console.log(dynamicMovieTimes);
 
         }
         $('#moviesList').html(dynamicresult);

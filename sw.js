@@ -12,7 +12,15 @@ var filesToCache = [
   'images/mercy2.jpg',
   'images/movie.jpg',
   './seatselection.html',
-  './numberofseats.html'
+  './numberofseats.html',
+  './contactus.html',
+  './images/mail.png',
+  './images/facebook.png',
+  './images/twitter.png',
+  './images/googleplus.png',
+  './images/linkedin.png',
+  './images/rss.png',
+  './images/location.png'
 ];
 
 self.addEventListener('install', function (e) {
